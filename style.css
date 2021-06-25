@@ -13,25 +13,47 @@ body {
     background-color: var(--color-principal);
 }
 
-/* nav {
-    max-width: 90%;
-    border: 2px solid rgb(255, 227, 175)
+nav {
+    /* border: 2px solid rgb(255, 227, 175); */
+    position: absolute;
+    align-items: center;
+    width: 150px;
+    top: 80px;
+    left: 9px;
+    display: none;
+}
+
+nav.active{
+    display: block;
 }
 
 #menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#menu {
+    gap: 1rem;
+    flex-direction: column;
     list-style-type: none;
 }
 
-#menu-link a {
+
+li.apartados {
+    display:flex;
+    align-content: center;
+    align-items: center;
+  justify-content: center;
+    /* padding: 5px; */
+    /* vertical-align: middle; */
+    /* text-align: center; */
+    
+    border: 2px solid rgb(255, 227, 175);
+    height: 2rem;
+}
+
+li.apartados a {
+    display: block;
     text-decoration: none;
     color: white;
-} */
+}
+
 
 #hamburguesa {
     /* border: 1px solid red; */
