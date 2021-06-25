@@ -1,0 +1,97 @@
+:root {
+    --color-principal: #1b1b32;
+}
+
+
+/* * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+} */
+
+body {
+    background-color: var(--color-principal);
+}
+
+/* nav {
+    max-width: 90%;
+    border: 2px solid rgb(255, 227, 175)
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+#menu-link a {
+    text-decoration: none;
+    color: white;
+} */
+
+#hamburguesa {
+    /* border: 1px solid red; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    left: 50px;
+}
+
+#barras {
+    position: relative;
+    
+    width: 40px;
+    height: 40px;
+}
+
+#barras span {
+    height: .4rem;
+    width: 100%;
+    background-color: rgb(209, 255, 117) ;
+    transform:rotate(0deg);
+    border-radius: 5px;
+    position: absolute;
+    transition: all .30s;
+    transform-origin: left center;
+    will-change: transform, opacity;
+}
+
+#barras span:nth-child(1){
+    top: 0px;
+}
+
+#barras span:nth-child(2){
+    top: 9px;
+}
+
+#barras span:nth-child(3){
+    top: 18px;
+}
+
+#menu-link:hover span,
+#menu-link:focus span,
+#menu-link:active span {
+    background-color: rgb(213, 87, 251);
+}
+
+#barras.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -5px;
+    left: 2px;
+}
+
+#barras.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#barras.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 2px;
+}
