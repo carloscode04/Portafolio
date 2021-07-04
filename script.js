@@ -1,7 +1,7 @@
 let hamburguesa = document.querySelector('#barras')
-let menu = document.querySelector('#nav-menu')
+let slidebar = document.querySelector('.slidebar')
 
 hamburguesa.addEventListener('click', ()=> {
     hamburguesa.classList.toggle('active')
-    menu.classList.toggle('active')
+    slidebar.classList.toggle('active')
 })
